@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios de JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link nav-item active" id="ejercicio_1-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_1" type="button" role="tab" aria-controls="ejercicio_1" aria-selected="true"><i class="fa-solid fa-1"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_2-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_2" type="button" role="tab" aria-controls="ejercicio_2" aria-selected="false"><i class="fa-solid fa-2"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_3-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_3" type="button" role="tab" aria-controls="ejercicio_3" aria-selected="false"><i class="fa-solid fa-3"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_4-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_4" type="button" role="tab" aria-controls="ejercicio_4" aria-selected="false"><i class="fa-solid fa-4"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_5-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_5" type="button" role="tab" aria-controls="ejercicio_5" aria-selected="true"><i class="fa-solid fa-5"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_6-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_6" type="button" role="tab" aria-controls="ejercicio_6" aria-selected="false"><i class="fa-solid fa-6"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_7-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_7" type="button" role="tab" aria-controls="ejercicio_7" aria-selected="false"><i class="fa-solid fa-7"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_8-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_8" type="button" role="tab" aria-controls="ejercicio_8" aria-selected="false"><i class="fa-solid fa-8"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_9-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_9" type="button" role="tab" aria-controls="ejercicio_9" aria-selected="true"><i class="fa-solid fa-9"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_10-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_10" type="button" role="tab" aria-controls="ejercicio_10" aria-selected="false"><i class="fa-solid fa-1"></i><i class="fa-solid fa-0"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_11-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_11" type="button" role="tab" aria-controls="ejercicio_11" aria-selected="false"><i class="fa-solid fa-1"></i><i class="fa-solid fa-1"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_12-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_12" type="button" role="tab" aria-controls="ejercicio_12" aria-selected="false"><i class="fa-solid fa-1"></i><i class="fa-solid fa-2"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_13-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_13" type="button" role="tab" aria-controls="ejercicio_13" aria-selected="true"><i class="fa-solid fa-1"></i><i class="fa-solid fa-3"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_14-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_14" type="button" role="tab" aria-controls="ejercicio_14" aria-selected="false"><i class="fa-solid fa-1"></i><i class="fa-solid fa-4"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_15-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_15" type="button" role="tab" aria-controls="ejercicio_15" aria-selected="false"><i class="fa-solid fa-1"></i><i class="fa-solid fa-5"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_16-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_16" type="button" role="tab" aria-controls="ejercicio_16" aria-selected="false"><i class="fa-solid fa-1"></i><i class="fa-solid fa-6"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_17-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_17" type="button" role="tab" aria-controls="ejercicio_17" aria-selected="false"><i class="fa-solid fa-1"></i><i class="fa-solid fa-7"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_18-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_18" type="button" role="tab" aria-controls="ejercicio_18" aria-selected="false"><i class="fa-solid fa-1"></i><i class="fa-solid fa-8"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_19-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_19" type="button" role="tab" aria-controls="ejercicio_19" aria-selected="false"><i class="fa-solid fa-1"></i><i class="fa-solid fa-9"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_20-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_20" type="button" role="tab" aria-controls="ejercicio_20" aria-selected="false"><i class="fa-solid fa-2"></i><i class="fa-solid fa-0"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_21-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_21" type="button" role="tab" aria-controls="ejercicio_21" aria-selected="false"><i class="fa-solid fa-2"></i><i class="fa-solid fa-1"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_22-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_22" type="button" role="tab" aria-controls="ejercicio_22" aria-selected="false"><i class="fa-solid fa-2"></i><i class="fa-solid fa-2"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_23-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_23" type="button" role="tab" aria-controls="ejercicio_23" aria-selected="false"><i class="fa-solid fa-2"></i><i class="fa-solid fa-3"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_24-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_24" type="button" role="tab" aria-controls="ejercicio_24" aria-selected="false"><i class="fa-solid fa-2"></i><i class="fa-solid fa-4"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_25-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_25" type="button" role="tab" aria-controls="ejercicio_25" aria-selected="false"><i class="fa-solid fa-2"></i><i class="fa-solid fa-5"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_26-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_26" type="button" role="tab" aria-controls="ejercicio_26" aria-selected="false"><i class="fa-solid fa-2"></i><i class="fa-solid fa-6"></i></button>
+                    <button class="nav-link nav-item" id="ejercicio_27-tab" data-bs-toggle="tab" data-bs-target="#ejercicio_27" type="button" role="tab" aria-controls="ejercicio_27" aria-selected="false"><i class="fa-solid fa-2"></i><i class="fa-solid fa-7"></i></button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-1 col-md-12">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="ejercicio_1" role="tabpanel" aria-labelledby="ejercicio_1-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 1</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a analizar..." id="texto" style="height: 100px"></textarea>
+                                    <label for="texto">Escribe el texto a analizar...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que cuente el número de caracteres de una cadena de texto.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Caracteres: <span id="contador">0</span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_1 -->
+
+                    <div class="tab-pane fade" id="ejercicio_2" role="tabpanel" aria-labelledby="ejercicio_2-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 2</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a analizar..." id="texto2" style="height: 100px"></textarea>
+                                    <label for="texto2">Escribe el texto a recortar...</label>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" placeholder="Valor inicial" aria-label="start" id="start" min="0">
+                                    <input type="number" class="form-control" placeholder="Valor final" aria-label="end" id="end" min="0">
+                                </div>
+                                <p class="card-text mt-2">Programa una función que te devuelva el texto recortado según el número de caracteres indicados.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Texto recortado: <span id="recortado"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_2 -->
+
+                    <div class="tab-pane fade" id="ejercicio_3" role="tabpanel" aria-labelledby="ejercicio_3-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 2</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a separar..." id="texto3" style="height: 100px"></textarea>
+                                    <label for="texto3">Escribe el texto a separar...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que dada una <code>String</code> te devuelva un <code>array</code> de textos separados por cierto caracter.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Texto separado:<br>
+                                <ul class="list-group" id="separado"></ul>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_3 -->
+                    <div class="tab-pane fade" id="ejercicio_4" role="tabpanel" aria-labelledby="ejercicio_4-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 4</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a repetir..." id="texto4" style="height: 100px"></textarea>
+                                    <label for="texto4">Escribe el texto a repetir...</label>
+                                </div>
+                                <div class="input-group flex-nowrap mb-3">
+                                    <span class="input-group-text" id="addon-wrapping">#</span>
+                                    <input type="number" class="form-control" placeholder="Número de veces a repetir" aria-label="repeticion" aria-describedby="addon-wrapping" id="repetition" min="0">
+                                </div>
+                                <p class="card-text mt-2">Programa una función que repita un texto X veces.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Texto repetido: <span id="repetir"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_4 -->
+
+                    <div class="tab-pane fade" id="ejercicio_5" role="tabpanel" aria-labelledby="ejercicio_5-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 5</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a invertir..." id="texto5" style="height: 100px"></textarea>
+                                    <label for="texto5">Escribe el texto a invertir...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que invierta las palabras de una cacena de texto.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Texto repetido: <span id="invertido"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_5 -->
+
+                    <div class="tab-pane fade" id="ejercicio_6" role="tabpanel" aria-labelledby="ejercicio_6-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 6</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a buscar..." id="texto6" style="height: 100px"></textarea>
+                                    <label for="texto6">Escribe el texto a buscar...</label>
+                                </div>
+                                <div class="input-group flex-nowrap mb-3">
+                                    <span class="input-group-text" id="addon-wrapping-6">#</span>
+                                    <input type="text" class="form-control" placeholder="Texto a buscar" aria-label="ocurrencias" aria-describedby="addon-wrapping" id="ocurrencias">
+                                </div>
+                                <p class="card-text mt-2">Programa una función para contar el número de veces que se repite una palabra en un texto largo.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Número de ocurrencias: <span id="ocurrencia">0</span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_6 -->
+
+                    <div class="tab-pane fade" id="ejercicio_7" role="tabpanel" aria-labelledby="ejercicio_7-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 7</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a analizar..." id="texto7" style="height: 100px"></textarea>
+                                    <label for="texto7">Escribe el texto a analizar...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que valide si una palabra o frase dada es un palíndromo.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                ¿Es palíndromo?: <span id="palindromo"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_7 -->
+
+                    <div class="tab-pane fade" id="ejercicio_8" role="tabpanel" aria-labelledby="ejercicio_8-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 8</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto..." id="texto8" style="height: 100px"></textarea>
+                                    <label for="texto8">Escribe el texto...</label>
+                                </div>
+                                <div class="input-group flex-nowrap mb-3">
+                                    <span class="input-group-text" id="addon-wrapping-8">#</span>
+                                    <input type="text" class="form-control" placeholder="Texto a eliminar" aria-label="patron" aria-describedby="addon-wrapping" id="patron">
+                                </div>
+                                <p class="card-text mt-2">Programa una función que elimine cierto patrón de caracteres de un texto dado.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Nueva cadena: <span id="eliminado"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_8 -->
+
+                    <div class="tab-pane fade" id="ejercicio_9" role="tabpanel" aria-labelledby="ejercicio_9-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 9</h5>
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" id="limit-i" placeholder="Límite inferior" aria-label="limite-inferior" min="0">
+                                    <input type="number" class="form-control" id="limit-s" placeholder="Límite superior" aria-label="limite-superior" min="0">
+                                </div>
+                                <p class="card-text mt-2">Programa una función que obtenga un numero aleatorio entre 501 y 600.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Número aleatorio: <span id="aleatorio"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_9 -->
+
+                    <div class="tab-pane fade" id="ejercicio_10" role="tabpanel" aria-labelledby="ejercicio_10-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 10</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el número..." id="texto10" style="height: 100px"></textarea>
+                                    <label for="texto8">Escribe el número...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en un sentido que en otro).</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                ¿Es capicúa?: <span id="capicua"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_10 -->
+
+                    <div class="tab-pane fade" id="ejercicio_11" role="tabpanel" aria-labelledby="ejercicio_11-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 11</h5>
+                                <div class="input-group flex-nowrap mb-3">
+                                    <span class="input-group-text" id="addon-wrapping-11">#</span>
+                                    <input type="number" class="form-control" placeholder="Número a calcular" aria-label="num-fact" aria-describedby="addon-wrapping" id="num-fact" min="0">
+                                </div>
+                                <p class="card-text mt-2">Programa una función que calcule el factorial de un número.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Factorial: <span id="factorial"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_11 -->
+
+                    <div class="tab-pane fade" id="ejercicio_12" role="tabpanel" aria-labelledby="ejercicio_12-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 12</h5>
+                                <div class="input-group flex-nowrap mb-3">
+                                    <span class="input-group-text" id="addon-wrapping-12">#</span>
+                                    <input type="number" class="form-control" placeholder="Número a calcular" aria-label="num-prime" aria-describedby="addon-wrapping" id="num-prime" min="0">
+                                </div>
+                                <p class="card-text mt-2">Programa una función que determine si un número es
+                                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                                        <a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Ver lista de números primos">
+                                            primo
+                                            <svg class="bi" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                        </a>
+                                    </button>
+                                </p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                ¿Es primo?: <span id="primo"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_12 -->
+
+                    <div class="tab-pane fade" id="ejercicio_13" role="tabpanel" aria-labelledby="ejercicio_13-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 13</h5>
+                                <div class="input-group flex-nowrap mb-3">
+                                    <span class="input-group-text" id="addon-wrapping-13">#</span>
+                                    <input type="number" class="form-control" placeholder="Número a calcular" aria-label="num-prime" aria-describedby="addon-wrapping" id="es-par" min="0">
+                                </div>
+                                <p class="card-text mt-2">Programa una función que determine si un número es par o impar.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                ¿Es par o impar?: <span id="par"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_13 -->
+
+                    <div class="tab-pane fade" id="ejercicio_14" role="tabpanel" aria-labelledby="ejercicio_14-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 14</h5>
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" placeholder="Temperatura" aria-label="start" id="temp-grados">
+                                    <select class="form-select selector-temps" aria-label="Unidad termométrica">
+                                        <option selected disabled value="">Selecciona una unidad termométrica</option>
+                                        <option value="1">Celsius</option>
+                                        <option value="2">Fahrenheit</option>
+                                    </select>
+                                </div>
+                                <p class="card-text mt-2">Programa una función para convertir grados Celsius a Fahrenheit y viceversa.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Conversión: <span id="temps"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_14 -->
+
+                    <div class="tab-pane fade" id="ejercicio_15" role="tabpanel" aria-labelledby="ejercicio_15-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 15</h5>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Número a convertir" aria-label="start" id="numero-conversion">
+                                    <select class="form-select selector-sistema-numerico" aria-label="Número a convertir">
+                                        <option selected disabled value="">Selecciona un sistema numérico</option>
+                                        <option value="1">Decimal</option>
+                                        <option value="2">Binario</option>
+                                    </select>
+                                </div>
+                                <p class="card-text mt-2">Programa una función para convertir números de base binaria a decimal y viceversa.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Conversión: <span id="convertido"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_15 -->
+
+                    <div class="tab-pane fade" id="ejercicio_16" role="tabpanel" aria-labelledby="ejercicio_16-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 16</h5>
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" id="monto" placeholder="Monto" aria-label="monto" min="0">
+                                    <input type="number" class="form-control" id="descuento-aplicar" placeholder="Descuento a aplicar" aria-label="descuento-aplicar" min="0">
+                                </div>
+                                <p class="card-text mt-2">Programa una función que devuelva el monto final después de aplicar un descuento a una cantidad dada.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Conversión: <span id="descuento"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_16 -->
+
+                    <div class="tab-pane fade" id="ejercicio_17" role="tabpanel" aria-labelledby="ejercicio_17-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 17</h5>
+                                <div class="input-group mb-3">
+                                    <input id="fecha-comparar" class="form-control" type="date" />
+                                </div>
+                                <p class="card-text mt-2">Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Resultado: <span id="tiempo_transcurrido"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_17 -->
+
+                    <div class="tab-pane fade" id="ejercicio_18" role="tabpanel" aria-labelledby="ejercicio_18-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 18</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a analizar..." id="texto18" style="height: 100px"></textarea>
+                                    <label for="texto18">Escribe el texto a analizar...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que dada una cadena de texto cuente el número de vocales y consonantes.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Consonantes: <span id="consonantes"></span> - Vocales: <span id="vocales"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_18 -->
+
+                    <div class="tab-pane fade" id="ejercicio_19" role="tabpanel" aria-labelledby="ejercicio_19-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 19</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a analizar..." id="texto19" style="height: 100px"></textarea>
+                                    <label for="texto19">Escribe el texto a analizar...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que valide que un texto sea un nombre válido.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                ¿Nombre válido?: <span id="nombre-valido"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_19 -->
+
+                    <div class="tab-pane fade" id="ejercicio_20" role="tabpanel" aria-labelledby="ejercicio_20-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 20</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe el texto a analizar..." id="texto20" style="height: 100px"></textarea>
+                                    <label for="texto20">Escribe el texto a analizar...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que valide que un texto sea un email válido.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                ¿Correo válido?: <span id="correo-valido"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_20 -->
+
+                    <div class="tab-pane fade" id="ejercicio_21" role="tabpanel" aria-labelledby="ejercicio_21-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 21</h5>
+                                <!--<div class="input-group flex-nowrap mb-3">
+                                    <span class="input-group-text" id="addon-wrapping-21">#</span>
+                                    <input type="number" class="form-control" placeholder="Números a elevar..." aria-label="num-prime" aria-describedby="addon-wrapping" id="array-square">
+                                </div>-->
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe los numeros separados por espacios..." id="array-square" style="height: 100px"></textarea>
+                                    <label for="array-square">Escribe los numeros separados por espacios...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que dado un array numérico devuelve otro array con los números elevados al cuadrado.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Resultado: <br>
+                                <ul class="list-group" id="array-squared"></ul>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_21 -->
+
+                    <div class="tab-pane fade" id="ejercicio_22" role="tabpanel" aria-labelledby="ejercicio_22-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 22</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe los numeros separados por espacios..." id="array-mayor-menor" style="height: 100px"></textarea>
+                                    <label for="array-square">Escribe los numeros separados por espacios...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que dado un array devuelva el número mas alto y el más bajo de dicho array.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Resultado:
+                                <ul class="list-group" id="array-mayor-menor-ordenado"></ul>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_22 -->
+
+                    <div class="tab-pane fade" id="ejercicio_23" role="tabpanel" aria-labelledby="ejercicio_23-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 23</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe los numeros separados por espacios..." id="array-pares-impares" style="height: 100px"></textarea>
+                                    <label for="array-square">Escribe los numeros separados por espacios...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que dado un array de números devuelva un objeto con 2 arreglos.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Pares:
+                                <ul class="list-group" id="array-pares"></ul>
+                                <br>
+                                Impares:
+                                <ul class="list-group" id="array-impares"></ul>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_23 -->
+
+                    <div class="tab-pane fade" id="ejercicio_24" role="tabpanel" aria-labelledby="ejercicio_24-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 24</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe los numeros separados por espacios..." id="array-asc-desc" style="height: 100px"></textarea>
+                                    <label for="array-square">Escribe los numeros separados por espacios...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que dado un arreglo de números devuelva un objeto con dos arreglos.
+                                    El primero tendrá los numeros ordenados en forma ascendente y el segundo de forma descendiente.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Ascendente:
+                                <ul class="list-group" id="array-asc"></ul>
+                                <br>
+                                Descendente:
+                                <ul class="list-group" id="array-desc"></ul>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_24 -->
+
+                    <div class="tab-pane fade" id="ejercicio_25" role="tabpanel" aria-labelledby="ejercicio_25-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 25</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe los numeros separados por espacios..." id="array-duplicados" style="height: 100px"></textarea>
+                                    <label for="array-square">Escribe los numeros separados por espacios...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que dado un arreglo de elementos, elimine los duplicados.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Resultado:
+                                <ul class="list-group" id="array-eliminados"></ul>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_25 -->
+
+                    <div class="tab-pane fade" id="ejercicio_26" role="tabpanel" aria-labelledby="ejercicio_26-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 26</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Escribe los numeros separados por espacios..." id="array-promedios" style="height: 100px"></textarea>
+                                    <label for="array-square">Escribe los numeros separados por espacios...</label>
+                                </div>
+                                <p class="card-text mt-2">Programa una función que dado un arreglo de números obtenga el promedio.</p>
+                            </div><!-- card-body -->
+                            <div class="card-footer text-body-secondary text-center">
+                                Resultado: <span id="promedio-array"></span>
+                            </div><!-- card-footer -->
+                        </div><!-- card -->
+                    </div><!-- #ejercicio_26 -->
+
+                    <div class="tab-pane fade" id="ejercicio_27" role="tabpanel" aria-labelledby="ejercicio_27-tab" tabindex="0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ejercicio 27</h5>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="ID IMDB" aria-label="id-pelicula" id="pelicula-id">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="Título" aria-label="titulo-pelicula" id="pelicula-titulo">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="Director" aria-label="Director" id="pelicula-director">
+                                    <span class="input-group-text">@</span>
+                                    <input type="number" class="form-control" placeholder="Año de estreno" aria-label="Director" id="pelicula-fecha-estreno">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="Países de origen" aria-label="paises-origen" id="pelicula-paises">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="Géneros" aria-label="generos" id="pelicula-generos">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="Calificación" aria-label="calificacion" id="pelicula-calificacion">
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-primary" type="button" id="crear-objeto-pelicula">Crear</button>
+                                </div>
+                                <p class="card-text mt-2">
+                                    Programa una clase llamada Pelicula. La clase recibirá un objeto al momento de instanciarse con los siguentes datos: id de la película en IMDB, titulo, director, año de estreno, país o países de origen, géneros y calificación en IMBD
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-success">Todos los datos del objeto son obligatorios.</li>
+                                        <li class="list-group-item list-group-item-success">Valida que el id IMDB tenga 9 caracteres, los primeros 2 sean letras y los 7 restantes números.</li>
+                                        <li class="list-group-item list-group-item-success">Valida que el título no rebase los 100 caracteres.</li>
+                                        <li class="list-group-item list-group-item-success">Valida que el director no rebase los 50 caracteres.</li>
+                                        <li class="list-group-item list-group-item-success">Valida que el año de estreno sea un número entero de 4 dígitos.</li>
+                                        <li class="list-group-item list-group-item-success">Valida que el país o paises sea introducidos en forma de arreglo.</li>
+                                        <li class="list-group-item list-group-item-success">Valida que los géneros sean introducidos en forma de arreglo.</li>
+                                        <li class="list-group-item list-group-item-success">Valida que los géneros introducidos esten dentro de los géneros aceptados*.</li>
+                                        <li class="list-group-item list-group-item-success">Crea un método estático que devuelva los géneros aceptados*.</li>
+                                        <li class="list-group-item list-group-item-success">Valida que la calificación sea un número entre 0 y 10 pudiendo ser decimal de una posición.</li>
+                                        <li class="list-group-item list-group-item-success">Crea un método que devuelva toda la ficha técnica de la película.</li>
+                                        <li class="list-group-item list-group-item-success">Apartir de un arreglo con la información de 3 películas genera 3 instancias de la clase de forma automatizada e imprime la ficha técnica de cada película.</li>
+                                    </ul>
+                                </p>
+                                <p class="card-text mt-2">
+                                    Géneros Aceptados:
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">Action</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Adult</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Adventure</li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">Animation</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Biography</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Comedy</li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">Crime</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Documentary</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Drama</li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">Family</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Fantasy</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Film</li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">Noir</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Game-Show</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">History</li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">Horror</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Musical</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Music</li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">Mystery</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">News</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Reality-TV</li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">Romance</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Sci-Fi</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Short</li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">Sport</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Talk-Show</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Thriller</li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal">
+                                        <li class="list-group-item flex-fill list-group-item-info">War</li>
+                                        <li class="list-group-item flex-fill list-group-item-info">Western</li>
+                                    </ul>
+                                </p>
+                            </div><!-- card-body -->
+                    </div><!-- #ejercicio_27 -->
+                </div><!-- tab-content -->
+            </div><!-- col-xs-1 col-md-12 -->
+        </div><!-- row -->
+    </div><!-- container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Primeros 1000 números primos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-success table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">1</th>
+                                <th scope="col">2</th>
+                                <th scope="col">3</th>
+                                <th scope="col">4</th>
+                                <th scope="col">5</th>
+                                <th scope="col">6</th>
+                                <th scope="col">7</th>
+                                <th scope="col">8</th>
+                                <th scope="col">9</th>
+                                <th scope="col">10</th>
+                                <th scope="col">11</th>
+                                <th scope="col">12</th>
+                                <th scope="col">13</th>
+                                <th scope="col">14</th>
+                                <th scope="col">15</th>
+                                <th scope="col">16</th>
+                                <th scope="col">17</th>
+                                <th scope="col">18</th>
+                                <th scope="col">19</th>
+                                <th scope="col">20</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>1–20
+                            </th>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>11</td>
+                            <td>13</td>
+                            <td>17</td>
+                            <td>19</td>
+                            <td>23</td>
+                            <td>29</td>
+                            <td>31</td>
+                            <td>37</td>
+                            <td>41</td>
+                            <td>43</td>
+                            <td>47</td>
+                            <td>53</td>
+                            <td>59</td>
+                            <td>61</td>
+                            <td>67</td>
+                            <td>71
+                            </td></tr>
+                        <tr>
+                            <th>21–40
+                            </th>
+                            <td>73</td>
+                            <td>79</td>
+                            <td>83</td>
+                            <td>89</td>
+                            <td>97</td>
+                            <td>101</td>
+                            <td>103</td>
+                            <td>107</td>
+                            <td>109</td>
+                            <td>113</td>
+                            <td>127</td>
+                            <td>131</td>
+                            <td>137</td>
+                            <td>139</td>
+                            <td>149</td>
+                            <td>151</td>
+                            <td>157</td>
+                            <td>163</td>
+                            <td>167</td>
+                            <td>173
+                            </td></tr>
+                        <tr>
+                            <th>41–60
+                            </th>
+                            <td>179</td>
+                            <td>181</td>
+                            <td>191</td>
+                            <td>193</td>
+                            <td>197</td>
+                            <td>199</td>
+                            <td>211</td>
+                            <td>223</td>
+                            <td>227</td>
+                            <td>229</td>
+                            <td>233</td>
+                            <td>239</td>
+                            <td>241</td>
+                            <td>251</td>
+                            <td>257</td>
+                            <td>263</td>
+                            <td>269</td>
+                            <td>271</td>
+                            <td>277</td>
+                            <td>281
+                            </td></tr>
+                        <tr>
+                            <th>61–80
+                            </th>
+                            <td>283</td>
+                            <td>293</td>
+                            <td>307</td>
+                            <td>311</td>
+                            <td>313</td>
+                            <td>317</td>
+                            <td>331</td>
+                            <td>337</td>
+                            <td>347</td>
+                            <td>349</td>
+                            <td>353</td>
+                            <td>359</td>
+                            <td>367</td>
+                            <td>373</td>
+                            <td>379</td>
+                            <td>383</td>
+                            <td>389</td>
+                            <td>397</td>
+                            <td>401</td>
+                            <td>409
+                            </td></tr>
+                        <tr>
+                            <th>81–100
+                            </th>
+                            <td>419</td>
+                            <td>421</td>
+                            <td>431</td>
+                            <td>433</td>
+                            <td>439</td>
+                            <td>443</td>
+                            <td>449</td>
+                            <td>457</td>
+                            <td>461</td>
+                            <td>463</td>
+                            <td>467</td>
+                            <td>479</td>
+                            <td>487</td>
+                            <td>491</td>
+                            <td>499</td>
+                            <td>503</td>
+                            <td>509</td>
+                            <td>521</td>
+                            <td>523</td>
+                            <td>541
+                            </td></tr>
+                        <tr>
+                            <th>101–120
+                            </th>
+                            <td>547</td>
+                            <td>557</td>
+                            <td>563</td>
+                            <td>569</td>
+                            <td>571</td>
+                            <td>577</td>
+                            <td>587</td>
+                            <td>593</td>
+                            <td>599</td>
+                            <td>601</td>
+                            <td>607</td>
+                            <td>613</td>
+                            <td>617</td>
+                            <td>619</td>
+                            <td>631</td>
+                            <td>641</td>
+                            <td>643</td>
+                            <td>647
+                            </td>
+                            <td>653</td>
+                            <td>659
+                            </td></tr>
+                        <tr>
+                            <th>121–140
+                            </th>
+                            <td>661</td>
+                            <td>673</td>
+                            <td>677</td>
+                            <td>683</td>
+                            <td>691</td>
+                            <td>701</td>
+                            <td>709</td>
+                            <td>719</td>
+                            <td>727</td>
+                            <td>733</td>
+                            <td>739</td>
+                            <td>743</td>
+                            <td>751</td>
+                            <td>757</td>
+                            <td>761</td>
+                            <td>769</td>
+                            <td>773</td>
+                            <td>787</td>
+                            <td>797</td>
+                            <td>809
+                            </td></tr>
+                        <tr>
+                            <th>141–160
+                            </th>
+                            <td>811</td>
+                            <td>821</td>
+                            <td>823</td>
+                            <td>827</td>
+                            <td>829</td>
+                            <td>839</td>
+                            <td>853</td>
+                            <td>857</td>
+                            <td>859</td>
+                            <td>863</td>
+                            <td>877</td>
+                            <td>881</td>
+                            <td>883</td>
+                            <td>887</td>
+                            <td>907</td>
+                            <td>911</td>
+                            <td>919</td>
+                            <td>929</td>
+                            <td>937</td>
+                            <td>941
+                            </td></tr>
+                        <tr>
+                            <th>161–180
+                            </th>
+                            <td>947</td>
+                            <td>953</td>
+                            <td>967</td>
+                            <td>971</td>
+                            <td>977</td>
+                            <td>983</td>
+                            <td>991</td>
+                            <td>997</td>
+                            <td>1009</td>
+                            <td>1013</td>
+                            <td>1019</td>
+                            <td>1021</td>
+                            <td>1031</td>
+                            <td>1033</td>
+                            <td>1039</td>
+                            <td>1049</td>
+                            <td>1051</td>
+                            <td>1061</td>
+                            <td>1063</td>
+                            <td>1069
+                            </td></tr>
+                        <tr>
+                            <th>181–200
+                            </th>
+                            <td>1087</td>
+                            <td>1091</td>
+                            <td>1093</td>
+                            <td>1097</td>
+                            <td>1103</td>
+                            <td>1109</td>
+                            <td>1117</td>
+                            <td>1123</td>
+                            <td>1129</td>
+                            <td>1151</td>
+                            <td>1153</td>
+                            <td>1163</td>
+                            <td>1171</td>
+                            <td>1181</td>
+                            <td>1187</td>
+                            <td>1193</td>
+                            <td>1201</td>
+                            <td>1213</td>
+                            <td>1217</td>
+                            <td>1223
+                            </td></tr>
+                        <tr>
+                            <th>201–220
+                            </th>
+                            <td>1229</td>
+                            <td>1231</td>
+                            <td>1237</td>
+                            <td>1249</td>
+                            <td>1259</td>
+                            <td>1277</td>
+                            <td>1279</td>
+                            <td>1283</td>
+                            <td>1289</td>
+                            <td>1291</td>
+                            <td>1297</td>
+                            <td>1301</td>
+                            <td>1303</td>
+                            <td>1307</td>
+                            <td>1319</td>
+                            <td>1321</td>
+                            <td>1327</td>
+                            <td>1361</td>
+                            <td>1367</td>
+                            <td>1373
+                            </td></tr>
+                        <tr>
+                            <th>221–240
+                            </th>
+                            <td>1381</td>
+                            <td>1399</td>
+                            <td>1409</td>
+                            <td>1423</td>
+                            <td>1427</td>
+                            <td>1429</td>
+                            <td>1433</td>
+                            <td>1439</td>
+                            <td>1447</td>
+                            <td>1451</td>
+                            <td>1453</td>
+                            <td>1459</td>
+                            <td>1471</td>
+                            <td>1481</td>
+                            <td>1483</td>
+                            <td>1487</td>
+                            <td>1489</td>
+                            <td>1493</td>
+                            <td>1499</td>
+                            <td>1511
+                            </td></tr>
+                        <tr>
+                            <th>241–260
+                            </th>
+                            <td>1523</td>
+                            <td>1531</td>
+                            <td>1543</td>
+                            <td>1549</td>
+                            <td>1553</td>
+                            <td>1559</td>
+                            <td>1567</td>
+                            <td>1571</td>
+                            <td>1579</td>
+                            <td>1583</td>
+                            <td>1597</td>
+                            <td>1601</td>
+                            <td>1607</td>
+                            <td>1609</td>
+                            <td>1613</td>
+                            <td>1619</td>
+                            <td>1621</td>
+                            <td>1627</td>
+                            <td>1637</td>
+                            <td>1657
+                            </td></tr>
+                        <tr>
+                            <th>261–280
+                            </th>
+                            <td>1663</td>
+                            <td>1667</td>
+                            <td>1669</td>
+                            <td>1693</td>
+                            <td>1697</td>
+                            <td>1699</td>
+                            <td>1709</td>
+                            <td>1721</td>
+                            <td>1723</td>
+                            <td>1733</td>
+                            <td>1741</td>
+                            <td>1747</td>
+                            <td>1753</td>
+                            <td>1759</td>
+                            <td>1777</td>
+                            <td>1783</td>
+                            <td>1787</td>
+                            <td>1789</td>
+                            <td>1801</td>
+                            <td>1811
+                            </td></tr>
+                        <tr>
+                            <th>281–300
+                            </th>
+                            <td>1823</td>
+                            <td>1831</td>
+                            <td>1847</td>
+                            <td>1861</td>
+                            <td>1867</td>
+                            <td>1871</td>
+                            <td>1873</td>
+                            <td>1877</td>
+                            <td>1879</td>
+                            <td>1889</td>
+                            <td>1901</td>
+                            <td>1907</td>
+                            <td>1913</td>
+                            <td>1931</td>
+                            <td>1933</td>
+                            <td>1949</td>
+                            <td>1951</td>
+                            <td>1973</td>
+                            <td>1979</td>
+                            <td>1987
+                            </td></tr>
+                        <tr>
+                            <th>301–320
+                            </th>
+                            <td>1993</td>
+                            <td>1997</td>
+                            <td>1999</td>
+                            <td>2003</td>
+                            <td>2011</td>
+                            <td>2017</td>
+                            <td>2027</td>
+                            <td>2029</td>
+                            <td>2039</td>
+                            <td>2053</td>
+                            <td>2063</td>
+                            <td>2069</td>
+                            <td>2081</td>
+                            <td>2083</td>
+                            <td>2087</td>
+                            <td>2089</td>
+                            <td>2099</td>
+                            <td>2111</td>
+                            <td>2113</td>
+                            <td>2129
+                            </td></tr>
+                        <tr>
+                            <th>321–340
+                            </th>
+                            <td>2131</td>
+                            <td>2137</td>
+                            <td>2141</td>
+                            <td>2143</td>
+                            <td>2153</td>
+                            <td>2161</td>
+                            <td>2179</td>
+                            <td>2203</td>
+                            <td>2207</td>
+                            <td>2213</td>
+                            <td>2221</td>
+                            <td>2237</td>
+                            <td>2239</td>
+                            <td>2243</td>
+                            <td>2251</td>
+                            <td>2267</td>
+                            <td>2269</td>
+                            <td>2273</td>
+                            <td>2281</td>
+                            <td>2287
+                            </td></tr>
+                        <tr>
+                            <th>341–360
+                            </th>
+                            <td>2293</td>
+                            <td>2297</td>
+                            <td>2309</td>
+                            <td>2311</td>
+                            <td>2333</td>
+                            <td>2339</td>
+                            <td>2341</td>
+                            <td>2347</td>
+                            <td>2351</td>
+                            <td>2357</td>
+                            <td>2371</td>
+                            <td>2377</td>
+                            <td>2381</td>
+                            <td>2383</td>
+                            <td>2389</td>
+                            <td>2393</td>
+                            <td>2399</td>
+                            <td>2411</td>
+                            <td>2417</td>
+                            <td>2423
+                            </td></tr>
+                        <tr>
+                            <th>361–380
+                            </th>
+                            <td>2437</td>
+                            <td>2441</td>
+                            <td>2447</td>
+                            <td>2459</td>
+                            <td>2467</td>
+                            <td>2473</td>
+                            <td>2477</td>
+                            <td>2503</td>
+                            <td>2521</td>
+                            <td>2531</td>
+                            <td>2539</td>
+                            <td>2543</td>
+                            <td>2549</td>
+                            <td>2551</td>
+                            <td>2557</td>
+                            <td>2579</td>
+                            <td>2591</td>
+                            <td>2593</td>
+                            <td>2609</td>
+                            <td>2617
+                            </td></tr>
+                        <tr>
+                            <th>381–400
+                            </th>
+                            <td>2621</td>
+                            <td>2633</td>
+                            <td>2647</td>
+                            <td>2657</td>
+                            <td>2659</td>
+                            <td>2663</td>
+                            <td>2671</td>
+                            <td>2677</td>
+                            <td>2683</td>
+                            <td>2687</td>
+                            <td>2689</td>
+                            <td>2693</td>
+                            <td>2699</td>
+                            <td>2707</td>
+                            <td>2711</td>
+                            <td>2713</td>
+                            <td>2719</td>
+                            <td>2729</td>
+                            <td>2731</td>
+                            <td>2741
+                            </td></tr>
+                        <tr>
+                            <th>401–420
+                            </th>
+                            <td>2749</td>
+                            <td>2753</td>
+                            <td>2767</td>
+                            <td>2777</td>
+                            <td>2789</td>
+                            <td>2791</td>
+                            <td>2797</td>
+                            <td>2801</td>
+                            <td>2803</td>
+                            <td>2819</td>
+                            <td>2833</td>
+                            <td>2837</td>
+                            <td>2843</td>
+                            <td>2851</td>
+                            <td>2857</td>
+                            <td>2861</td>
+                            <td>2879</td>
+                            <td>2887</td>
+                            <td>2897</td>
+                            <td>2903
+                            </td></tr>
+                        <tr>
+                            <th>421–440
+                            </th>
+                            <td>2909</td>
+                            <td>2917</td>
+                            <td>2927</td>
+                            <td>2939</td>
+                            <td>2953</td>
+                            <td>2957</td>
+                            <td>2963</td>
+                            <td>2969</td>
+                            <td>2971</td>
+                            <td>2999</td>
+                            <td>3001</td>
+                            <td>3011</td>
+                            <td>3019</td>
+                            <td>3023</td>
+                            <td>3037</td>
+                            <td>3041</td>
+                            <td>3049</td>
+                            <td>3061</td>
+                            <td>3067</td>
+                            <td>3079
+                            </td></tr>
+                        <tr>
+                            <th>441–460
+                            </th>
+                            <td>3083</td>
+                            <td>3089</td>
+                            <td>3109</td>
+                            <td>3119</td>
+                            <td>3121</td>
+                            <td>3137</td>
+                            <td>3163</td>
+                            <td>3167</td>
+                            <td>3169</td>
+                            <td>3181</td>
+                            <td>3187</td>
+                            <td>3191</td>
+                            <td>3203</td>
+                            <td>3209</td>
+                            <td>3217</td>
+                            <td>3221</td>
+                            <td>3229</td>
+                            <td>3251</td>
+                            <td>3253</td>
+                            <td>3257
+                            </td></tr>
+                        <tr>
+                            <th>461–480
+                            </th>
+                            <td>3259</td>
+                            <td>3271</td>
+                            <td>3299</td>
+                            <td>3301</td>
+                            <td>3307</td>
+                            <td>3313</td>
+                            <td>3319</td>
+                            <td>3323</td>
+                            <td>3329</td>
+                            <td>3331</td>
+                            <td>3343</td>
+                            <td>3347</td>
+                            <td>3359</td>
+                            <td>3361</td>
+                            <td>3371</td>
+                            <td>3373</td>
+                            <td>3389</td>
+                            <td>3391</td>
+                            <td>3407</td>
+                            <td>3413
+                            </td></tr>
+                        <tr>
+                            <th>481–500
+                            </th>
+                            <td>3433</td>
+                            <td>3449</td>
+                            <td>3457</td>
+                            <td>3461</td>
+                            <td>3463</td>
+                            <td>3467</td>
+                            <td>3469</td>
+                            <td>3491</td>
+                            <td>3499</td>
+                            <td>3511</td>
+                            <td>3517</td>
+                            <td>3527</td>
+                            <td>3529</td>
+                            <td>3533</td>
+                            <td>3539</td>
+                            <td>3541</td>
+                            <td>3547</td>
+                            <td>3557</td>
+                            <td>3559</td>
+                            <td>3571
+                            </td></tr>
+                        <tr>
+                            <th>501–520
+                            </th>
+                            <td>3581</td>
+                            <td>3583</td>
+                            <td>3593</td>
+                            <td>3607</td>
+                            <td>3613</td>
+                            <td>3617</td>
+                            <td>3623</td>
+                            <td>3631</td>
+                            <td>3637</td>
+                            <td>3643</td>
+                            <td>3659</td>
+                            <td>3671</td>
+                            <td>3673</td>
+                            <td>3677</td>
+                            <td>3691</td>
+                            <td>3697</td>
+                            <td>3701</td>
+                            <td>3709</td>
+                            <td>3719</td>
+                            <td>3727
+                            </td></tr>
+                        <tr>
+                            <th>521–540
+                            </th>
+                            <td>3733</td>
+                            <td>3739</td>
+                            <td>3761</td>
+                            <td>3767</td>
+                            <td>3769</td>
+                            <td>3779</td>
+                            <td>3793</td>
+                            <td>3797</td>
+                            <td>3803</td>
+                            <td>3821</td>
+                            <td>3823</td>
+                            <td>3833</td>
+                            <td>3847</td>
+                            <td>3851</td>
+                            <td>3853</td>
+                            <td>3863</td>
+                            <td>3877</td>
+                            <td>3881</td>
+                            <td>3889</td>
+                            <td>3907
+                            </td></tr>
+                        <tr>
+                            <th>541–560
+                            </th>
+                            <td>3911</td>
+                            <td>3917</td>
+                            <td>3919</td>
+                            <td>3923</td>
+                            <td>3929</td>
+                            <td>3931</td>
+                            <td>3943</td>
+                            <td>3947</td>
+                            <td>3967</td>
+                            <td>3989</td>
+                            <td>4001</td>
+                            <td>4003</td>
+                            <td>4007</td>
+                            <td>4013</td>
+                            <td>4019</td>
+                            <td>4021</td>
+                            <td>4027</td>
+                            <td>4049</td>
+                            <td>4051</td>
+                            <td>4057
+                            </td></tr>
+                        <tr>
+                            <th>561–580
+                            </th>
+                            <td>4073</td>
+                            <td>4079</td>
+                            <td>4091</td>
+                            <td>4093</td>
+                            <td>4099</td>
+                            <td>4111</td>
+                            <td>4127</td>
+                            <td>4129</td>
+                            <td>4133</td>
+                            <td>4139</td>
+                            <td>4153</td>
+                            <td>4157</td>
+                            <td>4159</td>
+                            <td>4177</td>
+                            <td>4201</td>
+                            <td>4211</td>
+                            <td>4217</td>
+                            <td>4219</td>
+                            <td>4229</td>
+                            <td>4231
+                            </td></tr>
+                        <tr>
+                            <th>581–600
+                            </th>
+                            <td>4241</td>
+                            <td>4243</td>
+                            <td>4253</td>
+                            <td>4259</td>
+                            <td>4261</td>
+                            <td>4271</td>
+                            <td>4273</td>
+                            <td>4283</td>
+                            <td>4289</td>
+                            <td>4297</td>
+                            <td>4327</td>
+                            <td>4337</td>
+                            <td>4339</td>
+                            <td>4349</td>
+                            <td>4357</td>
+                            <td>4363</td>
+                            <td>4373</td>
+                            <td>4391</td>
+                            <td>4397</td>
+                            <td>4409
+                            </td></tr>
+                        <tr>
+                            <th>601–620
+                            </th>
+                            <td>4421</td>
+                            <td>4423</td>
+                            <td>4441</td>
+                            <td>4447</td>
+                            <td>4451</td>
+                            <td>4457</td>
+                            <td>4463</td>
+                            <td>4481</td>
+                            <td>4483</td>
+                            <td>4493</td>
+                            <td>4507</td>
+                            <td>4513</td>
+                            <td>4517</td>
+                            <td>4519</td>
+                            <td>4523</td>
+                            <td>4547</td>
+                            <td>4549</td>
+                            <td>4561</td>
+                            <td>4567</td>
+                            <td>4583
+                            </td></tr>
+                        <tr>
+                            <th>621–640
+                            </th>
+                            <td>4591</td>
+                            <td>4597</td>
+                            <td>4603</td>
+                            <td>4621</td>
+                            <td>4637</td>
+                            <td>4639</td>
+                            <td>4643</td>
+                            <td>4649</td>
+                            <td>4651</td>
+                            <td>4657</td>
+                            <td>4663</td>
+                            <td>4673</td>
+                            <td>4679</td>
+                            <td>4691</td>
+                            <td>4703</td>
+                            <td>4721</td>
+                            <td>4723</td>
+                            <td>4729</td>
+                            <td>4733</td>
+                            <td>4751
+                            </td></tr>
+                        <tr>
+                            <th>641–660
+                            </th>
+                            <td>4759</td>
+                            <td>4783</td>
+                            <td>4787</td>
+                            <td>4789</td>
+                            <td>4793</td>
+                            <td>4799</td>
+                            <td>4801</td>
+                            <td>4813</td>
+                            <td>4817</td>
+                            <td>4831</td>
+                            <td>4861</td>
+                            <td>4871</td>
+                            <td>4877</td>
+                            <td>4889</td>
+                            <td>4903</td>
+                            <td>4909</td>
+                            <td>4919</td>
+                            <td>4931</td>
+                            <td>4933</td>
+                            <td>4937
+                            </td></tr>
+                        <tr>
+                            <th>661–680
+                            </th>
+                            <td>4943</td>
+                            <td>4951</td>
+                            <td>4957</td>
+                            <td>4967</td>
+                            <td>4969</td>
+                            <td>4973</td>
+                            <td>4987</td>
+                            <td>4993</td>
+                            <td>4999</td>
+                            <td>5003</td>
+                            <td>5009</td>
+                            <td>5011</td>
+                            <td>5021</td>
+                            <td>5023</td>
+                            <td>5039</td>
+                            <td>5051</td>
+                            <td>5059</td>
+                            <td>5077</td>
+                            <td>5081</td>
+                            <td>5087
+                            </td></tr>
+                        <tr>
+                            <th>681–700
+                            </th>
+                            <td>5099</td>
+                            <td>5101</td>
+                            <td>5107</td>
+                            <td>5113</td>
+                            <td>5119</td>
+                            <td>5147</td>
+                            <td>5153</td>
+                            <td>5167</td>
+                            <td>5171</td>
+                            <td>5179</td>
+                            <td>5189</td>
+                            <td>5197</td>
+                            <td>5209</td>
+                            <td>5227</td>
+                            <td>5231</td>
+                            <td>5233</td>
+                            <td>5237</td>
+                            <td>5261</td>
+                            <td>5273</td>
+                            <td>5279
+                            </td></tr>
+                        <tr>
+                            <th>701–720
+                            </th>
+                            <td>5281</td>
+                            <td>5297</td>
+                            <td>5303</td>
+                            <td>5309</td>
+                            <td>5323</td>
+                            <td>5333</td>
+                            <td>5347</td>
+                            <td>5351</td>
+                            <td>5381</td>
+                            <td>5387</td>
+                            <td>5393</td>
+                            <td>5399</td>
+                            <td>5407</td>
+                            <td>5413</td>
+                            <td>5417</td>
+                            <td>5419</td>
+                            <td>5431</td>
+                            <td>5437</td>
+                            <td>5441</td>
+                            <td>5443
+                            </td></tr>
+                        <tr>
+                            <th>721–740
+                            </th>
+                            <td>5449</td>
+                            <td>5471</td>
+                            <td>5477</td>
+                            <td>5479</td>
+                            <td>5483</td>
+                            <td>5501</td>
+                            <td>5503</td>
+                            <td>5507</td>
+                            <td>5519</td>
+                            <td>5521</td>
+                            <td>5527</td>
+                            <td>5531</td>
+                            <td>5557</td>
+                            <td>5563</td>
+                            <td>5569</td>
+                            <td>5573</td>
+                            <td>5581</td>
+                            <td>5591</td>
+                            <td>5623</td>
+                            <td>5639
+                            </td></tr>
+                        <tr>
+                            <th>741–760
+                            </th>
+                            <td>5641</td>
+                            <td>5647</td>
+                            <td>5651</td>
+                            <td>5653</td>
+                            <td>5657</td>
+                            <td>5659</td>
+                            <td>5669</td>
+                            <td>5683</td>
+                            <td>5689</td>
+                            <td>5693</td>
+                            <td>5701</td>
+                            <td>5711</td>
+                            <td>5717</td>
+                            <td>5737</td>
+                            <td>5741</td>
+                            <td>5743</td>
+                            <td>5749</td>
+                            <td>5779</td>
+                            <td>5783</td>
+                            <td>5791
+                            </td></tr>
+                        <tr>
+                            <th>761–780
+                            </th>
+                            <td>5801</td>
+                            <td>5807</td>
+                            <td>5813</td>
+                            <td>5821</td>
+                            <td>5827</td>
+                            <td>5839</td>
+                            <td>5843</td>
+                            <td>5849</td>
+                            <td>5851</td>
+                            <td>5857</td>
+                            <td>5861</td>
+                            <td>5867</td>
+                            <td>5869</td>
+                            <td>5879</td>
+                            <td>5881</td>
+                            <td>5897</td>
+                            <td>5903</td>
+                            <td>5923</td>
+                            <td>5927</td>
+                            <td>5939
+                            </td></tr>
+                        <tr>
+                            <th>781–800
+                            </th>
+                            <td>5953</td>
+                            <td>5981</td>
+                            <td>5987</td>
+                            <td>6007</td>
+                            <td>6011</td>
+                            <td>6029</td>
+                            <td>6037</td>
+                            <td>6043</td>
+                            <td>6047</td>
+                            <td>6053</td>
+                            <td>6067</td>
+                            <td>6073</td>
+                            <td>6079</td>
+                            <td>6089</td>
+                            <td>6091</td>
+                            <td>6101</td>
+                            <td>6113</td>
+                            <td>6121</td>
+                            <td>6131</td>
+                            <td>6133
+                            </td></tr>
+                        <tr>
+                            <th>801–820
+                            </th>
+                            <td>6143</td>
+                            <td>6151</td>
+                            <td>6163</td>
+                            <td>6173</td>
+                            <td>6197</td>
+                            <td>6199</td>
+                            <td>6203</td>
+                            <td>6211</td>
+                            <td>6217</td>
+                            <td>6221</td>
+                            <td>6229</td>
+                            <td>6247</td>
+                            <td>6257</td>
+                            <td>6263</td>
+                            <td>6269</td>
+                            <td>6271</td>
+                            <td>6277</td>
+                            <td>6287</td>
+                            <td>6299</td>
+                            <td>6301
+                            </td></tr>
+                        <tr>
+                            <th>821–840
+                            </th>
+                            <td>6311</td>
+                            <td>6317</td>
+                            <td>6323</td>
+                            <td>6329</td>
+                            <td>6337</td>
+                            <td>6343</td>
+                            <td>6353</td>
+                            <td>6359</td>
+                            <td>6361</td>
+                            <td>6367</td>
+                            <td>6373</td>
+                            <td>6379</td>
+                            <td>6389</td>
+                            <td>6397</td>
+                            <td>6421</td>
+                            <td>6427</td>
+                            <td>6449</td>
+                            <td>6451</td>
+                            <td>6469</td>
+                            <td>6473
+                            </td></tr>
+                        <tr>
+                            <th>841–860
+                            </th>
+                            <td>6481</td>
+                            <td>6491</td>
+                            <td>6521</td>
+                            <td>6529</td>
+                            <td>6547</td>
+                            <td>6551</td>
+                            <td>6553</td>
+                            <td>6563</td>
+                            <td>6569</td>
+                            <td>6571</td>
+                            <td>6577</td>
+                            <td>6581</td>
+                            <td>6599</td>
+                            <td>6607</td>
+                            <td>6619</td>
+                            <td>6637</td>
+                            <td>6653</td>
+                            <td>6659</td>
+                            <td>6661</td>
+                            <td>6673
+                            </td></tr>
+                        <tr>
+                            <th>861–880
+                            </th>
+                            <td>6679</td>
+                            <td>6689</td>
+                            <td>6691</td>
+                            <td>6701</td>
+                            <td>6703</td>
+                            <td>6709</td>
+                            <td>6719</td>
+                            <td>6733</td>
+                            <td>6737</td>
+                            <td>6761</td>
+                            <td>6763</td>
+                            <td>6779</td>
+                            <td>6781</td>
+                            <td>6791</td>
+                            <td>6793</td>
+                            <td>6803</td>
+                            <td>6823</td>
+                            <td>6827</td>
+                            <td>6829</td>
+                            <td>6833
+                            </td></tr>
+                        <tr>
+                            <th>881–900
+                            </th>
+                            <td>6841</td>
+                            <td>6857</td>
+                            <td>6863</td>
+                            <td>6869</td>
+                            <td>6871</td>
+                            <td>6883</td>
+                            <td>6899</td>
+                            <td>6907</td>
+                            <td>6911</td>
+                            <td>6917</td>
+                            <td>6947</td>
+                            <td>6949</td>
+                            <td>6959</td>
+                            <td>6961</td>
+                            <td>6967</td>
+                            <td>6971</td>
+                            <td>6977</td>
+                            <td>6983</td>
+                            <td>6991</td>
+                            <td>6997
+                            </td></tr>
+                        <tr>
+                            <th>901–920
+                            </th>
+                            <td>7001</td>
+                            <td>7013</td>
+                            <td>7019</td>
+                            <td>7027</td>
+                            <td>7039</td>
+                            <td>7043</td>
+                            <td>7057</td>
+                            <td>7069</td>
+                            <td>7079</td>
+                            <td>7103</td>
+                            <td>7109</td>
+                            <td>7121</td>
+                            <td>7127</td>
+                            <td>7129</td>
+                            <td>7151</td>
+                            <td>7159</td>
+                            <td>7177</td>
+                            <td>7187</td>
+                            <td>7193</td>
+                            <td>7207
+                            </td></tr>
+                        <tr>
+                            <th>921–940
+                            </th>
+                            <td>7211</td>
+                            <td>7213</td>
+                            <td>7219</td>
+                            <td>7229</td>
+                            <td>7237</td>
+                            <td>7243</td>
+                            <td>7247</td>
+                            <td>7253</td>
+                            <td>7283</td>
+                            <td>7297</td>
+                            <td>7307</td>
+                            <td>7309</td>
+                            <td>7321</td>
+                            <td>7331</td>
+                            <td>7333</td>
+                            <td>7349</td>
+                            <td>7351</td>
+                            <td>7369</td>
+                            <td>7393</td>
+                            <td>7411
+                            </td></tr>
+                        <tr>
+                            <th>941–960
+                            </th>
+                            <td>7417</td>
+                            <td>7433</td>
+                            <td>7451</td>
+                            <td>7457</td>
+                            <td>7459</td>
+                            <td>7477</td>
+                            <td>7481</td>
+                            <td>7487</td>
+                            <td>7489</td>
+                            <td>7499</td>
+                            <td>7507</td>
+                            <td>7517</td>
+                            <td>7523</td>
+                            <td>7529</td>
+                            <td>7537</td>
+                            <td>7541</td>
+                            <td>7547</td>
+                            <td>7549</td>
+                            <td>7559</td>
+                            <td>7561
+                            </td></tr>
+                        <tr>
+                            <th>961–980
+                            </th>
+                            <td>7573</td>
+                            <td>7577</td>
+                            <td>7583</td>
+                            <td>7589</td>
+                            <td>7591</td>
+                            <td>7603</td>
+                            <td>7607</td>
+                            <td>7621</td>
+                            <td>7639</td>
+                            <td>7643</td>
+                            <td>7649</td>
+                            <td>7669</td>
+                            <td>7673</td>
+                            <td>7681</td>
+                            <td>7687</td>
+                            <td>7691</td>
+                            <td>7699</td>
+                            <td>7703</td>
+                            <td>7717</td>
+                            <td>7723
+                            </td></tr>
+                        <tr>
+                            <th>981–1000
+                            </th>
+                            <td>7727</td>
+                            <td>7741</td>
+                            <td>7753</td>
+                            <td>7757</td>
+                            <td>7759</td>
+                            <td>7789</td>
+                            <td>7793</td>
+                            <td>7817</td>
+                            <td>7823</td>
+                            <td>7829</td>
+                            <td>7841</td>
+                            <td>7853</td>
+                            <td>7867</td>
+                            <td>7873</td>
+                            <td>7877</td>
+                            <td>7879</td>
+                            <td>7883</td>
+                            <td>7901</td>
+                            <td>7907</td>
+                            <td>7919</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        for (let i = 1; i <= 27; i++) {
+            const script = document.createElement("script");
+            script.src = `assets/js/${i}.js`;
+            document.body.appendChild(script);
+        }
+    </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>
