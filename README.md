@@ -3,7 +3,7 @@ JavaScript's beginners exercises about programming logic. It supports interactio
 
 Kindly reminder that this is the code from a beginner of JavaScript. Of course, it contains code that can be improved. I'm still learning, like everyone else 😬
 
-It has 27 excecises:
+It has 27 exercises:
 |#|Exercise                       |
 |--|-------------------------------|
 |1 |`Program a function that counts the number of characters in a text string.`|
